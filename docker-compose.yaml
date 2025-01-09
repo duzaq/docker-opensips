@@ -1,7 +1,7 @@
 version: '3'
 services:
   opensips:
-    image: opensips/opensips:latest
+    image: opensips/opensips:3.2
     container_name: opensips
     ports:
       - "5061:5060/udp"
