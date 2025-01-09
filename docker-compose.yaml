@@ -1,0 +1,10 @@
+version: '3'
+services:
+  opensips:
+    image: opensips/opensips:latest
+    container_name: opensips
+    ports:
+      - "5060:5060/udp"
+    volumes:
+      - ./opensips.cfg:/etc/opensips/opensips.cfg
+    command: opensips -f /etc/opensips/opensips.cfg
